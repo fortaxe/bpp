@@ -1,0 +1,66 @@
+.UnitopHeader{
+    width: 100%;
+    /* height: 40vh; */
+    height: auto;
+    /* background-color: aqua; */
+    /* padding: 5vmax 0; */
+    background-image: url(../../images/canva-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.UnitopHeader >img{
+    width: 100%;
+    height: 100%;
+}
+.uniContainer{
+    width: 100%;
+    /* padding: 2vmax 5vmax; */
+    background-color: white;
+}
+.uniHeader{
+    width: 100%;
+    padding: 2vmax 5vmax;
+    text-align: center;
+}
+.uniHeader > h1{
+    font: 800 3vmax 'Roboto';
+    color: var(--bi2);
+}
+.uniHeader > p{
+    font: 600 1.4vmax 'Roboto';
+    color: rgb(46, 46, 46);
+}
+.uniContainBox{
+    
+
+}
+.uniContainBox > h1{
+
+}
+.uniContainBox > div{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5vmax 0.6vmax;
+}
+.uniContainBox > div > svg{
+    font-size: large;
+    color: var(--bi1);
+}
+.uniContainBox > div > p{
+    font: 500 1.1vmax 'Roboto';
+    color: rgb(23, 23, 23);
+}
+
+@media screen and (max-width:600px) {
+    .UnitopHeader{
+    width: 100%;
+    height: 20vh;
+}
+.uniContainer{
+    width: 100%;
+    /* padding: 2vmax 0vmax !important; */
+    background-color: white;
+}
+}

@@ -1,0 +1,192 @@
+.urlPath{
+    background-image: url('../../images/about1.jpg') ;
+}
+.atagcontact{
+    color: rgb(35, 35, 35) !important;
+}
+.contactContainer1{
+    width: 100%;
+    /* margin: 2vmax 0; */
+    /* background-image: none; */
+    background-color: rgb(255, 255, 255);
+    /* background-image: url(../../images/canva-bg.png) ; */
+    display: flex;
+    padding: 1vmax 5vmax;
+
+}
+.Box1,
+.Box2{
+    width: 50% ;
+    /* background-color: aquamarine; */
+    padding: 2vmax;
+     background-color: white;
+    /*box-shadow: 0px 0px 10px gray; */
+}
+.Box2{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: white;
+
+    /* background-color: white;
+    box-shadow: 0px 0px 10px gray; */
+}
+.Box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 1.5rem;
+}
+.Box2 > h1{
+    font: 600 2.4vmax 'Roboto';
+    color: rgb(69, 69, 69);
+    /* background-color: var(--bi2); */
+    /* padding: 1vmax; */
+}
+.Box2 > p{
+    font: 300 1.4vmax 'Roboto';
+    color: rgb(30, 30, 30);
+}
+.Box2 >div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.Box2 > div > a{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    font: 300 1.4vmax 'Roboto';
+    color: rgb(30, 30, 30);
+    transition: all 0.5s;
+    
+}
+.Box2 > div > a:hover{
+    color: var(--bi2);
+}
+.Box2 > div > a > svg{
+    font: 300 1.4vmax 'Roboto';
+    /* color: rgb(30, 30, 30); */
+    color: var(--bi2);
+    
+}
+.contactBox{
+    width: 80%;
+    box-shadow: 0 0 10px gray;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+
+
+
+.contactBox > div{
+    display: flex;
+    flex-direction: column;
+    padding: 2vmax 4vmax;
+    gap: 1rem;
+}
+.contactBox > div > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+.contactBox > h3{
+    background-color: var(--bi2);
+    padding: 4vmax 1.5vmax;
+    border-radius: 0 0 50% 50% ;
+    text-align: center;
+    font-family: "Roboto";
+    color: white;
+    font: 600 2vmax 'Roboto';
+
+}
+.contactBox > div > form>input{
+    width: 100%;
+    padding: 1vmax;
+    outline: none;
+    border-radius: 0.4rem;
+    border: 1.5px solid gray;
+    font: 400 1.2vmax roboto;
+}
+
+.contactBox > div > form >textarea{
+        width: 100%;
+        min-height: 20%;
+        padding: 1.2vmax;
+        outline: none;
+        border-radius: 0.4rem;
+        border: 1.5px solid gray;
+        font: 400 1.2vmax roboto;
+    }
+.contactBox .Submitbtn{
+    width: 100%;
+    background-color: var(--bi2);
+    color: white;
+    border: none;
+}
+.contactBox .Submitbtn:hover{
+    cursor: pointer;
+    background-color: var(--bi1);
+}
+@media screen  and (max-width:600px){
+    .contactContainer1{
+    width: 100%;
+    /* margin: 2vmax 0; */
+    /* background-image: none; */
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 3vmax 1vmax;
+}
+.Box1,
+.Box2{
+    width: 100% ;
+    /* background-color: aquamarine; */
+    padding: 2vmax 0;
+    /* text-align: center; */
+
+}
+.contactBox{
+    width: 100%;
+}
+.Box2 > h1{
+    font: 600 3.8vmax 'Roboto';
+    /* color: rgb(18, 18, 18); */
+}
+.Box2 > p{
+    font: 300 2.4vmax 'Roboto';
+   
+}
+.Box2 > div > a{
+    font: 300 2.4vmax 'Roboto';
+   gap: 0.5rem;
+    
+}
+.Box2 > div > a > svg{
+    font: 300 2.4vmax 'Roboto';
+    /* color: rgb(30, 30, 30); */
+    color: var(--bi2);
+    
+}
+.contactBox > div > form>input{
+    width: 100%;
+    padding: 1vmax;
+    outline: none;
+    border-radius: 0.4rem;
+    border: 1.5px solid gray;
+    font: 400 1.9vmax roboto;
+}
+
+.contactBox > div > form >textarea{
+        width: 100%;
+        min-height: 20%;
+        padding: 1.2vmax;
+        outline: none;
+        border-radius: 0.4rem;
+        border: 1.5px solid gray;
+        font: 400 1.9vmax roboto;
+    }
+}

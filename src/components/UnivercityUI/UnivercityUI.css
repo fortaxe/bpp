@@ -1,0 +1,178 @@
+.itemAtag{
+    text-decoration: none;
+    /* padding: 2vmax !important; */
+    /* box-shadow: 1px 1px 5px rgb(0, 0, 0); */
+    width: 42vw !important;
+    /* min-height: 45vh; */
+
+    
+}
+.university-Box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.slideMainContainer{
+    /* background-image: url('../../images//canva-bg.png' ); */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ .slideMainContainer .slideMain{
+    padding: 5vmax;
+    background-color: rgba(255, 255, 255, 0.753);
+    color: black;
+   
+}
+.uUrl1{
+    transition: all 0.5s;
+
+    background-image: url('../../images/bpp-university.jpeg');
+}.uUrl2{
+    background-image: url('../../images/roehampton-university.jpeg');
+}.uUrl3{
+    background-image: url('../../images/ravensbourne-university.jpeg');
+}
+.Univer-carousal .item{
+    
+    /* margin: 0 0rem; */
+    /* padding: 1vmax; */
+    height: 100%;
+    transition: all 0.5s;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    /* background-image: url(https://martinoc.in/assets/img/uk.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 0 5px gray;
+    border-radius: 0.4rem;
+    align-items: end;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.item > a{
+    /* width: 100%;
+    height: 250%;
+    display: flex;
+    justify-content: flex-end; */
+    text-decoration: none;
+}
+.item:hover{
+    transition: all 0.5s ;
+/* background-size: 120%; */
+
+.itemContent{
+    width: 100%;
+    height: 100% !important;
+}
+.hide{
+    padding: 1vmax ;
+    margin: 0.5vmax;
+    display: block;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font: 600 18px 'roboto';
+    display: flex;
+    align-items: center;
+}
+.hide >svg{
+    font-size: 2vmax;
+}
+}
+.itemContent{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.567);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: 700 2vmax "Roboto";
+    transition: all 0.5s;
+}
+.hide{
+    display: none;
+}
+.UniHeader{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center ;
+    /* background-color: tomato; */
+}
+.UniHeader > h1{
+    text-align: center;
+    width: 100% !important;
+    font-family: Roboto;
+    font-size: 1.5vmax;
+}
+.scrollLine{
+    margin: 1vmax 0;
+    margin-bottom: 4vmax;
+}
+@media screen  and (max-width:600px){
+    .university-Box {
+        /* max-width: 100%; */
+        /* padding: 0px !important;
+            margin: 0px !important; */
+            display: flex;
+            flex-direction: column;
+            /* flex-wrap: wrap; */
+            align-items: flex-start;
+            /*
+            justify-content: center; */
+            /* gap: 1rem;   */
+         }
+
+    .itemContent{
+        font: 700 4vmax "Roboto";
+    }
+    .slideMainContainer .slideMain{        
+        /* padding: 5vmax 0vmax; */
+        background-color: white;
+        color: black;
+    }
+    /* .slideMainContainer .slideMain{ */
+        /* padding: 0vmax;} */
+    .item{
+        /* min-width: 86vw !important; */
+        /* padding: 1vmax; */
+        /* margin: 0 1rem; */
+        
+  
+    }
+    .itemAtag{
+        max-width: 80%;
+        text-decoration: none;
+        /* padding: 2vmax !important; */
+        /* box-shadow: 1px 1px 5px rgb(0, 0, 0); */
+    }    
+    .UniHeader > h1{
+        text-align: center;
+        width: 100%;
+        font-family: Roboto;
+        font-size: 3vmax;
+    }
+    .itemContent{
+        /* width: 100%; */
+        /* height: 25%; */
+        background-color: rgba(0, 0, 0, 0.567);
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font: 700 3vmax "Roboto";
+        transition: all 0.5s;
+    }
+}

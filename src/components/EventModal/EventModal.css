@@ -1,0 +1,80 @@
+.modalContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.544);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute !important;
+  z-index: 999999;
+  padding: 2vmax;
+}
+.hide {
+  margin-top: -130%;
+  transition: all 0.9s;
+  /* display: none; */
+}
+.modalbox {
+  background-color: rgba(255, 255, 255, 0.888);
+  /* background: url("https://res.cloudinary.com/dzgc1ajz7/image/upload/v1748324488/website-imgs/WhatsApp_Image_2025-05-26_at_2.10.54_PM_xuliw2.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  width: 35%;
+  max-height: 90vh;
+  /* max-height: 90vh; */
+  padding: 0.5rem;
+  /* border-radius: 0.4rem; */
+  /* overflow: scroll; */
+}
+.modalbox > video {
+  /* ov */
+  height: 100vh !important;
+}
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.modalHeader > h3 {
+  color: var(--bi2);
+}
+.modalHeader > button {
+  border: none;
+  background-color: transparent;
+  padding: 0.1rem 0.6rem;
+  /* border-radius: 0.2rem; */
+  color: rgb(90, 90, 90);
+  cursor: pointer;
+}
+.modalHeader > button:hover {
+  transition: all 0.5s;
+  background-color: rgb(194, 194, 194);
+  /* color: white; */
+}
+.modalItem {
+  width: 100%;
+  /* max-height: 100vh; */
+}
+.modalItem > video {
+  width: 100%;
+  height: 80vh !important;
+}
+.modalItem > img {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .modalbox {
+    background-color: rgb(255, 255, 255);
+
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    /* border-radius: 0.4rem; */
+  }
+  .hide {
+    margin-top: -300%;
+    transition: all 0.9s;
+    /* display: none; */
+  }
+}

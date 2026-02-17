@@ -1,0 +1,163 @@
+.workshopContainer{
+    width: 100%;
+    padding: 0 6vmax;
+    background-image: linear-gradient(45deg, rgba(158, 158, 255, 0.201), rgba(255, 255, 255, 0.782));
+
+}
+
+.imagesBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0rem 0;
+}
+.margin-Top{
+    margin-top: 4rem;
+
+}
+.imagesBox > div{
+    width: 32%;
+}
+/* ------------------------------ djdk------------------------------ */
+.app-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 280px;
+    /* background-color: var(--bi1); */
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 0.4rem;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-item.active {
+    background-color: #d0e6ff;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .event-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 5px 20px;
+    overflow-y: auto;
+  }
+  .content > h2{
+    color: var(--bi2);
+    font: 600 2vmax 'Roboto';
+    padding: 0.5vmax;
+    background-color: var(--bi1);
+    color: var(--textC2);
+    border-radius: 0.4rem;
+    text-align: center;
+
+
+  }
+  .content > h4{
+    font: 600 1.4vmax 'Roboto';
+    font-style: italic;
+    padding: 0.5vmax;
+  }
+  
+  .media-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+  
+  .media-item {
+    width: 32%;
+    height: 220px !important;
+    background-color: #d0e6ff;
+
+    border-radius: 8px;
+  }
+  
+
+@media screen and (max-width:600px) {
+    .imagesBox > div{
+        width: 100%;
+    }
+    .workshopContainer{
+      width: 100%;
+      padding: 0 1vmax;
+  
+  }
+    .app-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .sidebar {
+      width: 100%;
+      display: flex;
+      /* background-color: var(--bi1); */
+      border: 1px solid rgb(236, 236, 236);
+      border-radius: 0.4rem;
+      padding: 10px;
+      overflow-y: hidden;
+      overflow-x: auto;
+      gap: 0.5rem;
+      scroll-behavior: smooth;
+    }
+    .sidebar::-webkit-scrollbar{
+      height: 0;
+    }
+    .sidebar-item {
+      min-width: 80% ;
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    .content > h2{
+      color: var(--bi2);
+      font: 600 2.2vmax 'Roboto';
+      padding: 0.5vmax;
+      background-color: var(--bi1);
+      color: var(--textC2);
+      border-radius: 0.4rem;
+      text-align: center;
+  
+  
+    }
+    .content > h4{
+      font: 600 2.2vmax 'Roboto';
+      font-style: italic;
+      padding: 0.8vmax;
+    }
+    .media-item {
+      width: 48%;
+      height: auto !important;
+      background-color: #d0e6ff;
+  
+      border-radius: 8px;
+    }
+}

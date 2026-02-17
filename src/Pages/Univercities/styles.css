@@ -1,0 +1,16 @@
+.simple{
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.simpleSlideContainer{
+    padding: 0rem 0;
+    padding-bottom: 4vmax ;
+    /* background-color: rgb(215, 236, 250); */
+    /* background-image: url('../../images/pea.png'); */
+    background-repeat: no-repeat;
+    background-position: 45deg;
+    background-size: cover;
+    background-color: transparent;
+    
+}

@@ -1,0 +1,121 @@
+.uniFormContainer{
+    width: 100%;
+    box-shadow: 0 0 1px gray;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+.formHeader{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1vmax;  
+    background-color: var(--bi1);
+    padding: 2vmax;
+    border-radius:  0 0 50%  50%;
+    font-family: roboto;
+    color: white;
+}
+.formBox{
+width: 100%;
+display: flex;
+gap: 0.5rem;
+flex-direction: column;
+padding: 2vmax 3vmax;
+}
+.formItem{
+    padding: 0 1vmax;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    border-radius: 0.4rem;
+
+    border:  1px solid gray;
+}
+.formItem > textarea,
+
+.formItem > input{
+    width: 100%;
+    padding: 1vmax 0vmax;
+    outline: none;
+    border: 0px solid gray;
+    border-radius: 0.4rem;
+    font: 300 1.2vmax 'Roboto';
+    background-color: transparent;
+
+}
+.formItem > svg{
+    /* position: absolute; */
+    /* left: 2vmax; */
+    color: gray;
+    font-size: 1.5rem;
+}
+.formBtn{
+    width: 100%;
+}
+.loading{
+    padding: 1vmax;
+    text-align: center;
+}
+.formBtn > input:hover{
+    background-color: var(--bi2);
+
+}
+.formBtn > input{
+    transition: all 0.5s;
+
+    outline: none;
+    background-color: var(--bi1);
+    border: none;
+    width: 100%;
+    padding: 1vmax;
+    text-align: center;
+    font:600 1.4vmax 'Roboto' ;
+    cursor: pointer;
+    color: white;
+
+}
+@media screen and (max-width:600px){
+.formHeader{
+    padding: 4vmax 0;
+
+}
+.formItem{
+    padding: 0 1vmax;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    border-radius: 0.4rem;
+
+    border:  1px solid gray;
+}
+.formItem > textarea,
+
+.formItem > input{
+    width: 100%;
+    padding: 2vmax 0vmax;
+    outline: none;
+    border: 0px solid gray;
+    border-radius: 0.4rem;
+    font: 300 2.2vmax 'Roboto';
+    background-color: transparent;
+
+}
+.formBtn > input{
+    transition: all 0.5s;
+
+    outline: none;
+    background-color: rgb(255, 137, 116);
+    border: none;
+    width: 100%;
+    padding: 2vmax;
+    text-align: center;
+    font:600 2.4vmax 'Roboto' ;
+    cursor: pointer;
+    color: white;
+
+}
+
+}

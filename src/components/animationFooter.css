@@ -1,0 +1,78 @@
+.aniMainBox {
+    
+    position: relative;
+    overflow: hidden;
+    /* overflow: auto; */
+
+    height: 360px;
+}
+.aniMainBox > img{
+    position: absolute;
+    top: 5%;
+    left: 47%;
+    height: 70px;
+    z-index: 1;
+}
+
+.aniBox {
+    /* background: url(https://images.leverageedu.com/homepage/footer-background.png); */
+    /* background: url('../images//footer-design2.png'); */
+    background: url('../images//footer-d1.jpeg');
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    min-width: 180vw !important;
+    animation: webfooter_slideshow__d1IHp 10s linear infinite;
+    background-repeat: repeat;
+    background-position: 100%;
+    background-size: contain;
+
+    overflow:  hidden !important;
+
+
+}
+
+@keyframes webfooter_slideshow__d1IHp {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: -35%;
+    }
+}
+.aniBox::-webkit-scrollbar{
+    width: 0px !important;
+    height: 0px !important;
+}
+.aniBox::-webkit-scrollbar-thumb{
+    width: 0px !important;
+    height: 0px !important;
+}
+@media screen  and (max-width:600px){
+    .aniMainBox {
+        position: relative;
+        overflow: hidden;
+        max-height: 200px !important;
+    }
+    .aniMainBox > img{
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        height: 58px;
+        z-index: 1;
+    }
+    .aniBox {
+        background: url(https://images.leverageedu.com/homepage/footer-background.png);
+        background-position: right;
+        background-repeat: repeat;
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 300% !important;
+        animation: webfooter_slideshow__d1IHp 3s linear infinite;
+    }
+}

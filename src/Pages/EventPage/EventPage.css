@@ -1,0 +1,208 @@
+.event-v-Container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    /* background-image: linear-gradient(45deg, rgba(158, 158, 255, 0.201), rgba(255, 255, 255, 0.782)); */
+}
+
+.event-v-item {
+    width: 100%;
+    /* background-image: linear-gradient(to right, var(--bi2), var(--bi1)); */
+
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.event-v-item>h1 {
+    background-color: var(--textC2);
+    background-image: linear-gradient(to right, var(--bi2), var(--bi1));
+
+    border-radius: 0.2rem;
+    color: var(--textC2);
+    padding: 0.6vmax 1vmax;
+    font: 800 2vmax 'Roboto';
+    text-align: center;
+}
+
+.event-v-item>h2 {
+    /* border-radius: 0.4rem; */
+    color: var(--textC1);
+    padding: 0.2vmax;
+    font: 800 1.6vmax 'Roboto';
+    text-align: center;
+}
+
+.event-v-item>h3 {
+    border-radius: 0.4rem;
+    color: var(--textC1);
+    padding: 0.2vmax;
+    font: 800 1.2vmax 'Roboto';
+    text-align: center;
+    font-style: italic;
+}
+
+.event-v-item>h4 {
+    border-radius: 0.4rem;
+    color: var(--textC1);
+    padding: 0.2vmax;
+    font: 800 1.6vmax 'Roboto';
+    text-align: center;
+    font-style: italic;
+}
+
+
+.event-video-box {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.event-video-box::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.video-item {
+    min-width: 33%;
+    border-radius: 0.2rem;
+}
+
+.event-img-box {
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem;
+
+    >img {
+        width: 32%;
+        max-height: 40vh;
+        overflow: hidden;
+        border-radius: 0rem;
+        background-color: rgb(236, 236, 236);
+    }
+}
+
+.scroll-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vmax;
+}
+
+.event-v-item .scroll-box h4 {
+    border-radius: 0.4rem;
+    color: var(--textC1);
+    padding: 0.2vmax;
+    font: 800 1.6vmax 'Roboto';
+    text-align: center;
+    font-style: italic;
+}
+
+.scroll-box-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+
+    >button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.2rem 0.4rem;
+        background-color: var(--bi1);
+        border: none;
+        color: white;
+        border-radius: 0.2rem;
+
+        >svg {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.scroll-box-item>button:hover {
+    background-image: linear-gradient(to right, var(--bi2) ,var(--bi1));
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+    .event-main-Container {
+        width: 100%;
+        /* background-color: antiquewhite; */
+        padding: 0.5vmax !important;
+    }
+
+    .event-v-Container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .event-v-item {
+        width: 100%;
+        background-image: linear-gradient(to right, var(--bi2), var(--bi1));
+        padding: 3vmax 2vmax;
+        border-radius: 1rem;
+    }
+
+
+    .event-v-item>h1 {
+        background-color: var(--textC2);
+        border-radius: 0.4rem;
+        color: var(--textC1);
+        padding: 0.6vmax 1vmax;
+        font: 800 3vmax 'Roboto';
+    }
+
+    .event-v-item>h2 {
+        border-radius: 0.4rem;
+        color: var(--textC2);
+        padding: 0.2vmax;
+        font: 800 2.4vmax 'Roboto';
+    }
+
+    .event-v-item>h3 {
+        border-radius: 0.4rem;
+        color: var(--textC2);
+        padding: 0.2vmax;
+        font: 800 1.9vmax 'Roboto';
+    }
+
+    .event-video-box {
+        width: 100%;
+        display: flex;
+        overflow: auto;
+        gap: 0.5rem;
+        padding: 0rem;
+    }
+
+    .video-item {
+        min-width: 50%;
+        border-radius: 0.4rem;
+    }
+
+    .event-img-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 0rem;
+        padding-top: 1.5vmax;
+
+        >img {
+            width: 48%;
+            border-radius: 0.4rem;
+        }
+    }
+
+}

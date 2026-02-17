@@ -1,0 +1,25 @@
+{
+  "folders": [
+	{
+		"path": "../../../FAQai"
+	},
+	{
+		"path": "../../../voiceApp"
+	},
+	{
+		"path": "../../../gleam project"
+	},
+	{
+		"path": "../../../NextJs2025/blogging"
+	},
+	{
+		"path": "../../../Ghaziabad Aromatics/backend"
+	},
+	{
+		"path": ".."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "backend"
+  }
+}

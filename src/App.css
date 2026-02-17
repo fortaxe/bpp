@@ -1,0 +1,31 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
+@font-face {
+  font-family:"Roboto" ;
+  src: url('./font/static//YsabeauOffice-Bold.ttf');
+}
+@font-face {
+  font-family:"roboto" ;
+  src: url('./font/static//YsabeauOffice-Bold.ttf');
+}
+*{
+  max-width: 100%;
+  box-sizing: border-box;
+  
+}
+body{
+  margin-top: 4.6vmax;
+}
+.backgroundUi{
+  width: 100%;
+  padding: 2vmax;
+  background-image: url(./images/canva-bg.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen  and (max-width:600px){
+  body{
+    margin-top: 10.2vmax;
+    /* background-image: linear-gradient(white, tomato); */
+  }
+} 

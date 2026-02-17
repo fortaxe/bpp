@@ -1,0 +1,62 @@
+.urlPath{
+     background-image: url('../../images/about1.jpg');
+}
+.aboutContainer{
+    /* background-image: url('../../images/ban-map.png'); */
+
+     width: 100%;
+     padding: 3vmax 10vmax ;
+     background-color: white;
+     display: flex;
+}
+.aboutContainer > div > p{
+     font: 600 1.4vmax 'Roboto';
+     color: rgb(43, 43, 43);
+     line-height: 30px;
+}
+.imgbox{
+     width: 50%;
+     text-align: right;
+     padding-right: 3vmax;
+}
+.imgbox > img{
+     /* width: ; */
+     height: 47vh;
+     border-radius: 0.4rem;
+     box-shadow: 15px 15px 1px var(--bi1);
+}
+.textBox{
+     width: 50%;
+     padding: 0 2vmax;
+}
+.textBox > h1{
+     font: 700 3vmax 'Roboto';
+     color: rgb(22, 22, 22);
+}
+@media screen  and (max-width:600px){
+     .aboutContainer{
+          width: 100%;
+          padding: 3vmax 1vmax ;
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+     }
+     .imgbox{
+          width: 100%;
+     }
+     .textBox{
+          width: 100%;
+          padding:  2vmax 0;
+     }
+     .textBox > h1{
+          font: 700 4vmax 'Roboto';
+          color: rgb(22, 22, 22);
+          text-align: center;
+     }
+     .aboutContainer > div > p{
+          font: 600 2vmax 'Roboto';
+          color: rgb(43, 43, 43);
+          line-height: 30px;
+          text-align: center;
+     }
+}

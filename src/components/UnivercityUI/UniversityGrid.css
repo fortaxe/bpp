@@ -1,0 +1,67 @@
+.grid-container {
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+
+  }
+  
+  .box {
+    text-decoration: none;
+    position: relative;
+    height: 300px;
+    width: 45%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: aqua; */
+
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -80%;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: "Roboto";
+    background: rgba(0, 0, 0, 0.175);
+    transition: all 0.5s ease;
+  }
+  
+  .img1{
+    background-image: url("../../images/bpp-university.jpeg");
+  }
+    .img2 {
+      background-image: url('../../images/roehampton-university.jpeg');
+    }
+        .img3 {
+          background-image: url("../../images/ravensbourne-university.jpeg"); }
+                    .img4 {
+                      background-image: url('../../images/bpp-university.jpeg');       }
+  .box:hover .overlay {
+    background: rgba(0, 0, 0, 0.466);
+    bottom:  0;
+  }
+@media screen and (max-width:600px) {
+    .box {
+            position: relative;
+            height: 300px;
+            width:100%;
+    }
+}
