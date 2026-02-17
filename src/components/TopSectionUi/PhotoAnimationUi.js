@@ -54,7 +54,7 @@ const PhotoAnimationUi = () => {
               <div key={index} className="grid-item">
                 <img
                   src={src.src}
-                  alt={`image-${index}`}
+                  alt={`grid-item-${index}`}
                   className="image"
                   style={{ animationDelay: `${index * 0.5}s`, maxHeight: 160 }}
                 />

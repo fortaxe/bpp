@@ -9,12 +9,11 @@ import RashiActor from "../../images/bpp/rashi_actor.mp4";
 
 import './styles.css';
 
-import { FaArrowRight, FaCaretLeft, FaCaretRight } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { FaCaretLeft, FaCaretRight } from 'react-icons/fa';
 
 
 const testimonials = [
-    
+
     // {
     //     src: "https://res.cloudinary.com/dvxxcrbmx/video/upload/v1729670628/sanwariya/VID-20241023-WA0005_f9ctqf.mp4"
     // },
@@ -27,7 +26,7 @@ const testimonials = [
     {
         src: "https://res.cloudinary.com/dzgc1ajz7/video/upload/v1732091290/website-videos/university_delegates_-_UOR_iasfts.mp4"
     },
-   
+
 ]
 
 

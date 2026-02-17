@@ -134,7 +134,7 @@ const UniversityGrid = () => {
       {universities.map((uni, index) => (
         <Link
           to={`/${uni.url}`}
-          className={"box " + `img${index + 1}`}
+          className={`box img${index + 1}`}
           key={index}
           style={{}}
         >

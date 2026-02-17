@@ -15,58 +15,58 @@ const videos = [
 ]
 
 
-const imgs = [
-  {
-    src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091167/website-imgs/Rav_3_ucitvu.jpg"
-  },
-  {
-    src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091165/website-imgs/464217024_1144348267055505_8838143796456958845_n_ivdklu.jpg"
-  },
+// const imgs = [
+//   {
+//     src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091167/website-imgs/Rav_3_ucitvu.jpg"
+//   },
+//   {
+//     src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091165/website-imgs/464217024_1144348267055505_8838143796456958845_n_ivdklu.jpg"
+//   },
 
 
-  // {
-  //   src: "https"
-  // },
-  {
-    src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091160/website-imgs/RaV_fashion_ja3eew.jpg"
-  },
-  {
-    src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091160/website-imgs/Armaaan_atdab6.jpg"
-  },
-  {
-    src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091160/website-imgs/Vidya_Balan_poogqq.jpg"
-  },
-  {
-    src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091160/website-imgs/Armaan_Malik_d3te5c.jpg"
-  },
-  {
-    src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091160/website-imgs/464236041_1144344727055859_7909316947396505549_n_vxipgi.jpg"
-  },
-  {
-    src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091162/website-imgs/464310607_1144344620389203_4526046348893387278_n_li2k3r.jpg"
-  },
-  {
-    src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091162/website-imgs/Bpraak_eepps8.jpg"
-  },
-  {
-    src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091162/website-imgs/Arman_qsdpwu.jpg"
-  },
-  {
-    src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091162/website-imgs/Bp_rak_mjxadh.jpg"
-  },
-  {
-    src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091162/website-imgs/Bpraaak_cvwhan.jpg"
-  },
-  {
-    src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091163/website-imgs/Rav_2_aigga4.jpg"
-  },
-  {
-    src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091163/website-imgs/Rav_fashion_1_rhc9oc.jpg"
-  },
-  {
-    src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091163/website-imgs/Ravensbourne_Fashion_lg3mbf.jpg"
-  },
-]
+//   // {
+//   //   src: "https"
+//   // },
+//   {
+//     src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091160/website-imgs/RaV_fashion_ja3eew.jpg"
+//   },
+//   {
+//     src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091160/website-imgs/Armaaan_atdab6.jpg"
+//   },
+//   {
+//     src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091160/website-imgs/Vidya_Balan_poogqq.jpg"
+//   },
+//   {
+//     src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091160/website-imgs/Armaan_Malik_d3te5c.jpg"
+//   },
+//   {
+//     src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091160/website-imgs/464236041_1144344727055859_7909316947396505549_n_vxipgi.jpg"
+//   },
+//   {
+//     src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091162/website-imgs/464310607_1144344620389203_4526046348893387278_n_li2k3r.jpg"
+//   },
+//   {
+//     src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091162/website-imgs/Bpraak_eepps8.jpg"
+//   },
+//   {
+//     src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091162/website-imgs/Arman_qsdpwu.jpg"
+//   },
+//   {
+//     src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091162/website-imgs/Bp_rak_mjxadh.jpg"
+//   },
+//   {
+//     src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091162/website-imgs/Bpraaak_cvwhan.jpg"
+//   },
+//   {
+//     src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091163/website-imgs/Rav_2_aigga4.jpg"
+//   },
+//   {
+//     src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091163/website-imgs/Rav_fashion_1_rhc9oc.jpg"
+//   },
+//   {
+//     src: "https://res.cloudinary.com/dzgc1ajz7/image/upload/v1732091163/website-imgs/Ravensbourne_Fashion_lg3mbf.jpg"
+//   },
+// ]
 
 
 
@@ -75,7 +75,7 @@ const Gallery = ({ setUnderLine }) => {
   useEffect(() => {
     setUnderLine('gallery')
 
-  }, []);
+  }, [setUnderLine]);
 
 
 

@@ -1,43 +1,42 @@
 import React from "react";
-import { FaCheckCircle, FaCircle, FaDownload } from "react-icons/fa";
+import { FaCheckCircle } from "react-icons/fa";
 import "./Bpp.css";
-import AwesomeSlider from "react-awesome-slider";
 import UnivercityForm from "../../components/UnivercityForm/UnivercityForm.js";
 // import ArmanActor from "../../images/hsu/arman.mp4";
-import SimpleSlider from "./SimpleSlider.js";
-const videos = [
-  {
-    src: "https://res.cloudinary.com/dvxxcrbmx/video/upload/v1729679744/sanwariya/WhatsApp_Video_2024-10-23_at_15.27.15_h7ef2c.mp4",
-  },
-  {
-    src: "https://res.cloudinary.com/dvxxcrbmx/video/upload/v1729670620/sanwariya/VID-20241023-WA0002_wz9ak5.mp4",
-  },
-  {
-    src: "https://res.cloudinary.com/dvxxcrbmx/video/upload/v1729670628/sanwariya/VID-20241023-WA0005_f9ctqf.mp4",
-  },
-  //   {
-  //     src: ArmanActor,
-  //   },
-  {
-    src: "https://res.cloudinary.com/dvxxcrbmx/video/upload/v1712648233/sanwariya/VID-20240409-WA0002_h8ms2s.mp4",
-  },
-  {
-    iframe: true,
-    src: "https://www.youtube.com/embed/Vj12LeNoV5E",
-  },
-  {
-    iframe: true,
-    src: "https://www.youtube.com/embed/IUKtQVFHJrc",
-  },
-  {
-    iframe: true,
-    src: "https://www.youtube.com/embed/L8wsuQA4I9w",
-  },
-  {
-    iframe: true,
-    src: "https://www.youtube.com/embed/xBrv555-63A",
-  },
-];
+// import SimpleSlider from "./SimpleSlider.js";
+// const videos = [
+//   {
+//     src: "https://res.cloudinary.com/dvxxcrbmx/video/upload/v1729679744/sanwariya/WhatsApp_Video_2024-10-23_at_15.27.15_h7ef2c.mp4",
+//   },
+//   {
+//     src: "https://res.cloudinary.com/dvxxcrbmx/video/upload/v1729670620/sanwariya/VID-20241023-WA0002_wz9ak5.mp4",
+//   },
+//   {
+//     src: "https://res.cloudinary.com/dvxxcrbmx/video/upload/v1729670628/sanwariya/VID-20241023-WA0005_f9ctqf.mp4",
+//   },
+//   //   {
+//   //     src: ArmanActor,
+//   //   },
+//   {
+//     src: "https://res.cloudinary.com/dvxxcrbmx/video/upload/v1712648233/sanwariya/VID-20240409-WA0002_h8ms2s.mp4",
+//   },
+//   {
+//     iframe: true,
+//     src: "https://www.youtube.com/embed/Vj12LeNoV5E",
+//   },
+//   {
+//     iframe: true,
+//     src: "https://www.youtube.com/embed/IUKtQVFHJrc",
+//   },
+//   {
+//     iframe: true,
+//     src: "https://www.youtube.com/embed/L8wsuQA4I9w",
+//   },
+//   {
+//     iframe: true,
+//     src: "https://www.youtube.com/embed/xBrv555-63A",
+//   },
+// ];
 
 const imgs = [
   {
@@ -367,7 +366,7 @@ const PageBpp = ({ setUnderLine }) => {
           <div className="_gallery">
             {imgs.map((img) => (
               <div className="_img">
-                <img src={img.src} alt="Gallery Image" />
+                <img src={img.src} alt="Gallery item" />
               </div>
             ))}
           </div>

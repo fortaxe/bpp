@@ -1,7 +1,5 @@
 import React, { useRef } from 'react'
-import PageHeader from '../../components/pageHeader/pageHeader'
 import './EventPage.css'
-import EventUI from '../../components/EventUI/EventUI'
 import { FaCaretLeft, FaCaretRight } from 'react-icons/fa'
 
 const bppImgs = [
@@ -119,7 +117,7 @@ const images = [
   {
     src: "https://res.cloudinary.com/dwevw3pnz/image/upload/v1701108284/sanwariyaVideos/zlfqeoaee8hsdatctol5.jpg"
   },
-  ...bppImgs, ...galleryImage , ...galleryImage2, ...galleryImage3
+  ...bppImgs, ...galleryImage, ...galleryImage2, ...galleryImage3
 ]
 
 const videos = [
@@ -191,10 +189,10 @@ const EventPage = ({ setUnderLine }) => {
           <br />
           <div className='scroll-box'>
             <h4>Event Videos </h4>
-              <div className='scroll-box-item'>
-                <button onClick={scrollLeft}> <FaCaretLeft/> </button>
-                <button onClick={scrollRight}> <FaCaretRight/>  </button>
-              </div>
+            <div className='scroll-box-item'>
+              <button onClick={scrollLeft}> <FaCaretLeft /> </button>
+              <button onClick={scrollRight}> <FaCaretRight />  </button>
+            </div>
           </div>
           <div className='event-video-box'
             ref={carouselRef}

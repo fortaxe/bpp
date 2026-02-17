@@ -1,18 +1,14 @@
 import React, { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 // import 'swiper/swiper-bundle.css'; // Import Swiper styles
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
 import ArmanActor from "../../images/bpp/arman.mp4";
 import RashiActor from "../../images/bpp/rashi_actor.mp4";
 
 import "./styles.css";
 
-import { Navigation, Pagination, Autoplay, EffectCoverflow } from "swiper";
-import { Link } from "react-router-dom";
-import { FaArrowRight, FaCaretLeft, FaCaretRight } from "react-icons/fa";
+import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 
 const testimonials = [
   // {
@@ -58,8 +54,6 @@ const testimonials = [
     src: "https://res.cloudinary.com/dvxxcrbmx/video/upload/v1712648233/sanwariya/VID-20240409-WA0002_h8ms2s.mp4",
   },
 ];
-
-// Import Swiper modules (e.g., for navigation, pagination, autoplay)
 
 const MySwiper = () => {
   const carouselRef = useRef(null);

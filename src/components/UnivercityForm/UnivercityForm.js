@@ -18,7 +18,7 @@ const UnivercityForm = ({ univercity, pageSource }) => {
 
     setLoading(true)
 
-    if ((name === "", email === "", phone === 0, message === "")) {
+    if (name === "" || email === "" || phone === 0 || message === "") {
       alert("Please fill up Entire Field");
     } else {
       try {
@@ -32,7 +32,7 @@ const UnivercityForm = ({ univercity, pageSource }) => {
         };
         const config = { headers: { "Content-Type": "application/json" } };
 
-        const { data } = await axios.post(`${host}/api/v1/message`, datas, config);
+        await axios.post(`${host}/api/v1/message`, datas, config);
         // console.log(data.data.user )
         alert("Your Message send Successfully");
         setLoading(false)
