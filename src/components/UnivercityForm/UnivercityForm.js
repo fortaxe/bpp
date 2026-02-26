@@ -3,7 +3,7 @@ import './UnivercityForm.css'
 import { FaPhone, FaUser } from 'react-icons/fa'
 import { MdOutlineMail } from 'react-icons/md'
 import axios from 'axios'
-const host = 'http://62.72.31.157:6005';
+import host from '../../utils/var';
 
 const UnivercityForm = ({ univercity, pageSource }) => {
   const [name, setName] = useState("");

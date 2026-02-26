@@ -5,10 +5,7 @@ import { FaFacebook, FaInstagram, FaPhone, FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import FooterAnimationUi from '../../components/FooterAnimationUi.js'
-
-// const host = 'https://portal.sanwariyaeduconsultant.com'
-const host = 'http://62.72.31.157:6005';
-// const host = 'http://localhost:6005'
+import host from '../../utils/var';
 
 
 const Footer = () => {
@@ -109,7 +106,7 @@ const Footer = () => {
                 </div>
             </div> */}
 
-                <FooterAnimationUi />
+            <FooterAnimationUi />
         </footer>
     )
 }

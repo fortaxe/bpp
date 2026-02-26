@@ -3,10 +3,7 @@ import PageHeader from "../../components/pageHeader/pageHeader";
 import "./ContactUs.css";
 import { FaFacebook, FaInstagram, FaPhone, FaTwitter } from "react-icons/fa";
 import axios from 'axios'
-
-// const host = 'https://portal.sanwariyaeduconsultant.com'
-const host = 'http://62.72.31.157:6005';
-// const host = 'http://localhost:6005'
+import host from '../../utils/var';
 
 const ContactUs = ({ setUnderLine }) => {
   setUnderLine("contact");
